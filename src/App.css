@@ -1,0 +1,81 @@
+.App {
+	text-align: center;
+	height: 100%;
+}
+
+textarea {
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+	display: block;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+form {
+	width: 90%;
+	height: 500px;
+	margin: 0 auto;
+	display: block;
+}
+
+button {
+	background-color: green;
+	color: white;
+	font-size: 16px;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	/* margin: 20px auto; */
+	display: block;
+	width: 100%;
+}
+/* 
+button:hover {
+	background-color: darkblue;
+} */
+h1 {
+	/* background: linear-gradient(to right, #333333, #666666); */
+	/* text: linear-gradient(to right, #999999, #666666); */
+	/* color: linear-gradient(to right, #cccccc, #ffffff); */
+	/* color: black; */
+	/* background: linear-gradient(to left, #333333, #666666); */
+
+	width: 90%;
+}
+.ads {
+	width: 90%;
+	height: 300px;
+}
+
+.output {
+	width: 90%;
+}
+
+/* loaing */
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.circular-loader {
+	animation: rotate 2s linear infinite;
+}
+
+.loader {
+	width: 100px;
+}
+
+.loader-path {
+	fill: none;
+	stroke: white;
+	stroke-width: 3px;
+	stroke-linecap: round;
+}
+
+.loader-path {
+	stroke-dasharray: 10, 10;
+}
