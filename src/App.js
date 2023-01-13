@@ -8,8 +8,6 @@ function App() {
 	const [response, setResponse] = useState("")
 	const [isLoading, setIsLoading] = useState("")
 
-	const chatGptUrl = "https://api.openai.com/v1/chat/gpt"
-	const chatGptApiKey = "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"
 	const option = {
 		model: "text-davinci-003",
 		temperature: 0,
@@ -19,12 +17,13 @@ function App() {
 		presence_penalty: 0.0,
 	}
 	const configuration = new Configuration({
-		apiKey: "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",
+		apiKey: process.env.REACT_APP_API,
 	})
 	const openai = new OpenAIApi(configuration)
 
 	const handleSubmit = async (event) => {
 		event.preventDefault()
+		console.log(process.env.REACT_APP_API)
 		setIsLoading(true)
 		console.log(text)
 		let object = {
